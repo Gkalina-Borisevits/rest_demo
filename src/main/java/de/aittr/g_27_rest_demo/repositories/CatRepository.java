@@ -50,7 +50,7 @@ public class CatRepository implements CrudRepository<Cat> {
 
     public List<Cat> saveAll(List<Cat> cats) {
         List<Cat> saveCats = new ArrayList<>();
-        try(FileWriter writer = new FileWriter(file, true)) {
+        try(FileWriter writer = new FileWriter(file)) {
             for (Cat cat : cats) {
                 StringBuilder builder = new StringBuilder();
                 builder.append(cat.getId())

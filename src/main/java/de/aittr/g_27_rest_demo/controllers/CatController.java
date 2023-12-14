@@ -38,7 +38,7 @@ public class CatController {
         return service.getById(id);
     }
 
-    @DeleteMapping("/delete_by_id{id}")
+    @DeleteMapping("/delete_by_id/{id}")
     public void deleteById(@PathVariable int id){
         service.deleteById(id);
     }

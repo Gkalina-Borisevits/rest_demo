@@ -35,6 +35,6 @@ public class CatService implements AppService<Cat> {
     }
     @Override
     public void deleteById(int id) {
-        return;
+         repository.deleteById(id);
     }
 }
